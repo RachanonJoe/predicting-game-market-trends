@@ -1,59 +1,27 @@
 # Dissertation
+## Predictive Analytics and Machine Learning Approaches to Predict Global Video Game Trends
+- RACHANON CHOMPHOO
+- Student ID: 22080474
+- MSc. Data Science
+### DATASET OVERVIEW
+
+The dataset's information was obtained from **Kaggle**, initially scraped from Metacritic. The dataset Comprises 16,719 entries (rows) and 16 attributes (columns). It encompasses a diverse array of variables, including:
+
+- **Descriptive attributes**: Game Name, Platform, Genre, Publisher, and Developer.
+- **Temporal attribute**: Year of Release.
+- **Sales data**: Regional sales (North America, Europe, Japan, Other) and Global Sales.
+- **Evaluative metrics**: Critic Score, Critic Count, User Score, User Count.
+- **Content rating**: ESRB Rating.
+
+> The dataset includes video game sales data from 1980 to 2020, focusing on modern gaming eras, averaging around 2006. It covers a wide range of sales figures, with Global Sales reaching a peak of 82.53 million units, showcasing the substantial market reach of the industry.
 
 
+### DATA PREPARATION
 
-## Getting started
+- In the dataset, a comprehensive assessment for missing values in crucial columns, namely 'Year_of_Release' and 'Genre,' data filtration was executed for 1991-2016, ensuring temporal relevance. The three processes of data ingestion known as ETL (Extract, Transform, Load) have been applied in the first file call "**VD_sales_LinearR**"
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+### Files
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://gitlab.uwe.ac.uk/r2-chomphoo/dissertation.git
-git branch -M main
-git push -uf origin main
-```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://gitlab.uwe.ac.uk/r2-chomphoo/dissertation/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+- **VD_sales_LinearR**: contain Exploratory Analysis and Linear Regression model
+- **VD_sales_RidgeR**: contain Ridge Regression model
+- **VD_sales_LassoR**: contain Lasso Regression model
