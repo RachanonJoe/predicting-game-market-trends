@@ -3,6 +3,11 @@
 - RACHANON CHOMPHOO
 - Student ID: 22080474
 - MSc. Data Science
+
+### ABSTRACT
+
+> This study thoroughly examines the trends in video game sales for various genres. Using a comprehensive dataset of global sales figures, the research employs Linear, Ridge, and Lasso Regression models to explore the connection between the year of release and median sales. The study offers insights into the market dynamics driving sales trajectories within the video game industry. The results show a general decrease in median sales across multiple genres, suggesting changes in consumer preferences and market saturation. However, this trend is countered by the rise of mobile gaming, which has significantly impacted the gaming industry. The study also delves into the effect of mobile gaming on traditional gaming platforms, highlighting a stark decline in PC and console game sales compared to the booming mobile gaming sector. Statistical findings indicate that the models accurately capture the linear relationship between time and sales, with consistently low Mean Squared Error (MSE) metrics.
+
 ### DATASET OVERVIEW
 
 The dataset's information was obtained from **Kaggle**, initially scraped from Metacritic. The dataset Comprises 16,719 entries (rows) and 16 attributes (columns). It encompasses a diverse array of variables, including:
